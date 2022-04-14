@@ -30,7 +30,7 @@ public class Calculator {
             switch (preference) {
                 case 1:
                     // do factorial
-                    System.out.print("Enter the number : ");
+                    System.out.print("Enter the number: ");
                     num = scanner.nextDouble();
                     System.out.println("Factorial of "+num+" is : " + calculator.factorial(num));
                     System.out.println("\n");
