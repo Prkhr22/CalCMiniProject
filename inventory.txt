@@ -1,0 +1,4 @@
+cat > inventory
+[ubuntu18]
+172.16.128.55 ansible_user=prkh22
+Ctrl+C
