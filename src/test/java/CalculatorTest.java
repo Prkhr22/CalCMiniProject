@@ -8,8 +8,8 @@ public class CalculatorTest {
 
     @Test
     public void factorialTruePositive(){
-        assertEquals("factor of a number for True Positive", 120, calculator.factorial(5), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 24, calculator.factorial(4), DELTA);
+        assertEquals("factor of a number for True Positive", 720, calculator.factorial(6), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 6, calculator.factorial(3), DELTA);
     }
 
     @Test
@@ -45,13 +45,14 @@ public class CalculatorTest {
     @Test
     public void sqrootTruePositive(){
         assertEquals("Finding square root for True Positive", 2, calculator.sqroot(4), DELTA);
-        assertEquals("Finding square root for True Positive", 1, calculator.sqroot(1), DELTA);
+        assertEquals("Finding square root for True Positive", 12, calculator.sqroot(144), DELTA);
     }
 
     @Test
     public void sqrootFalsePositive(){
         assertNotEquals("Finding square root for False Positive", 1, calculator.sqroot(3), DELTA);
         assertNotEquals("Finding square root for False Positive", 0, calculator.sqroot(4), DELTA);
+        assertNotEquals("Finding square root for False Positive", 2, calculator.sqroot(9), DELTA);
 
     }
 
